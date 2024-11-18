@@ -1,0 +1,10 @@
+-- To Reset The Auto Increament use
+
+DELETE FROM game_history;
+ALTER TABLE game_history AUTO_INCREMENT = 1;
+DELETE FROM game;
+ALTER TABLE game AUTO_INCREMENT = 1;
+DELETE FROM friend;
+ALTER TABLE friend AUTO_INCREMENT = 1;
+DELETE FROM friendly_match;
+ALTER TABLE friendly_match AUTO_INCREMENT = 1;

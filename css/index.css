@@ -1,0 +1,154 @@
+/*Page Layout*/
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+}
+
+body{
+    background-image: url("../image/bg.gif") ;
+    background-repeat: repeat;
+}
+
+section {
+    margin: 100px auto 10px;
+    padding-top: 30px;
+    width: 600px;
+    height: 620px;
+
+    text-align: center;
+    border-radius: 20px;
+    animation: blink 10s linear infinite;
+}
+
+@keyframes blink {
+    0% {background-color: rgba(51, 102, 204, 0.7);}
+    50% {background-color: rgba(51, 102, 204, 0.4);}
+    100% {background-color: rgba(51, 102, 204, 0.7);}
+}
+
+/* Use radio to display block */
+
+#selectlogin,#selectsignup
+
+{
+    display: none;
+}
+
+#selectlogin:checked ~ 
+#filling_part .login
+{
+    display: block;
+}
+
+#selectsignup:checked ~ 
+#filling_part .signup
+{
+    display: block;
+}
+
+#selectlogin:checked ~ 
+#filling_part .signup
+{
+    display: none;
+} 
+
+#selectsignup:checked ~ 
+#filling_part .login
+{
+    display: none;
+} 
+
+
+/* Checked Icon */
+
+#selectlogin:checked + label img {
+    border:4px solid yellow;
+} 
+
+#selectsignup:checked + label img {
+    border:4px solid yellow;
+} 
+
+
+/* Other General css */
+
+h1{
+    margin-bottom: 7px;
+    color:yellow;
+    font-family: 'Adelle W01 Bold', 'Arvo', Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+/* CSS for error messages */
+em {
+    color: red;
+    font-size: 15px;
+    margin-top: 5px;
+    display: block;
+}
+
+
+label img{
+    margin: 20px 10px 30px;
+    height: 50px;
+    width: 150px;
+    border-radius: 7px;
+    border: 1.5px solid darkblue;
+}
+
+#filling_part p{
+    font-size: 30px;
+    margin-bottom: 5px;
+    color:#ffff99;
+    
+}
+#filling_part label{
+    font-family: monospace;
+    font-size: 20px;
+    color: #98fb98;
+}
+
+input[type="text"], input[type="email"], input[type="password"]{
+    padding: 8px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #333;
+    font-family: monospace;
+}
+
+input[type="text"]:focus, 
+input[type="email"]:focus, 
+input[type="password"]:focus{
+    outline: none;
+    border-color: #87cefa;
+    box-shadow: 0 0 10px #87cefa;
+      
+}
+
+input[type="submit"] {
+    background: linear-gradient(to bottom, #1abc9c, #16a085);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    font-family: "Roboto", sans-serif;
+}
+
+input[type="submit"]:hover {
+    background: #1abc9c;
+}
+
+
+
+
+
+

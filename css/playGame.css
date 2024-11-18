@@ -1,0 +1,101 @@
+body {
+    background-image: url("../image/fighting.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; /* Locks the background in place */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0; /* Removes default body margin */
+    padding: 0; /* Removes default body padding */
+}
+
+.button-container {
+    background-color: rgba(243, 243, 243, 0.5);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%; /* Adjusts to screen width */
+    max-width: 300px; /* Maximum width to avoid too large a container */
+    margin: 20px; /* Adds margin to allow breathing space on smaller screens */
+}
+
+.button-container button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Ensures the button takes up full width of the container */
+    max-width: 200px; /* Adds a maximum width for larger screens */
+}
+
+.button-container button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .button-container {
+        width: 90%; /* Slightly narrower for smaller screens */
+    }
+}
+
+
+.dots {
+    width: 3.5em;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dots div {
+    width: 0.8em;
+    height: 0.8em;
+    border-radius: 50%;
+    background-color: black;
+    animation: fade 0.8s ease-in-out alternate infinite;
+}
+
+.dots div:nth-of-type(1) {
+    animation-delay: -0.4s;
+}
+
+.dots div:nth-of-type(2) {
+    animation-delay: -0.2s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+  /* Loading animation */
+#loadingMessage {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.0em;
+    font-weight: bold; /* Stronger bold weight */
+    color: black;
+    letter-spacing: 0.1em;
+    margin-bottom: 10px;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+  

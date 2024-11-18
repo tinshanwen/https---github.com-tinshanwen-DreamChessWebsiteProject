@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+}
+
+body{
+    background-image: url("../image/bg.gif") ;
+    background-repeat: repeat;
+}
+
+section {
+    margin: auto;
+    padding-top: 150px;
+    width: 50%;
+    border-radius: 20px;
+    animation: blink 10s linear infinite;
+}

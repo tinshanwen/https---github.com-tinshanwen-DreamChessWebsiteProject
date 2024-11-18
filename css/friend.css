@@ -1,0 +1,204 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 50px; 
+    font-family: 'Poppins', sans-serif;
+    background-image: url("../image/bg3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    text-align: center;
+}
+
+table {
+    margin: 0 auto; 
+    border-collapse: collapse;
+    width: 80%;
+    max-height: calc(100vh - 200px); 
+    overflow: auto;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+h1{
+    font-size: 40px;
+    color: azure;
+}
+
+th{
+    color: white;
+    text-align: center;
+    padding-left: 0px;
+    background-color: #0DAFBB;
+    height: 50px;
+}
+
+
+td {
+    height: 50px;
+    padding: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5em;
+    color: black;
+    text-align: center;
+    margin: 20px 0;
+}
+
+td div{
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.5em;
+    color: black;
+}
+
+
+/* Set the Colour of Column */
+
+th:first-child{
+    border-top-left-radius:10px;
+}
+
+th:last-child{
+    border-top-right-radius:10px;
+}
+
+td:nth-child(1){
+    width:250px;
+    background-color:lightgreen;
+}
+
+td:nth-child(2){
+    width:250px;
+    background-color:lightcyan;
+}
+
+td:nth-child(3){
+    width:250px;
+    background-color: lightyellow;
+}
+
+td:nth-child(4){
+    width:250px;
+    background-color: lightpink;
+}
+
+td:nth-child(5){
+    width:250px;
+    background-color: rgb(179, 231, 128);
+}
+
+/* Set the Round Border of Table */
+tr:first-child td:first-child{
+    border-top-left-radius:10px;
+}
+
+tr:first-child td:last-child{
+    border-top-right-radius:10px;
+}
+
+tr:last-child td:first-child{
+    border-bottom-left-radius:10px;
+    border: transparent;
+}
+
+tr:last-child td:last-child{
+    border-bottom-right-radius:10px;
+    border: transparent;
+}
+
+button {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    padding: 8px 12px 8px 16px;
+    margin: 8px;
+    height: 40px;
+    width: auto;
+    border: none;
+    background: #056bfa27;
+    border-radius: 20px;
+    cursor: pointer;
+
+    white-space: nowrap; /* Prevent text from wrapping into two lines */
+    overflow: hidden; /* Hide any overflow */
+    text-overflow: ellipsis; /* Show ellipsis if text is too long */
+}
+  
+button {
+    font-weight: bold;
+    margin-top: 1px;
+    font-size: 19px;
+    line-height: 22px;
+    color: #056DFA;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    background: #056bfa49;
+}
+
+button:hover img {
+    animation: spin 1s linear infinite;
+}
+
+button img{
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-8deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(8deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.history td {
+    font-size: 2em;
+}
+
+@media screen and (max-width: 1000px) {
+    .history td {
+        font-size: 1.5em;
+    }
+
+    .history button {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .history td {
+        font-size: 1.0em;
+    }
+
+    .history button {
+        font-size: 13px;
+    }
+}

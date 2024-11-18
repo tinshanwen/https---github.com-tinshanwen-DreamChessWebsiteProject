@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+section {
+    padding: 100px 200px;
+}
+
+.heading {
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: white;
+    text-transform: uppercase;
+    /*Line*/
+    border-bottom: 1px solid #0dafbb;
+    margin-bottom: 50px;
+    padding-top: auto;
+}
+
+.heading-container{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-name,
+.section-name-go{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: white;
+    text-transform: uppercase;
+    padding: 5px;
+    margin: 5px;
+}
+
+.section-name-go{
+    background: #0dafbb;
+    border-radius: 5px;
+    font-size: 20px;
+    border: 3px solid #0dafbb;
+    transition: 0.5s ease-in-out;
+}
+
+.section-name-go a{
+    color: white;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+}
+
+.section-name-go:hover{
+    background: white;
+}
+
+.section-name-go:hover a{
+    color: #0dafbb;
+}
+
+/*Category Section*/
+section.category{
+    padding: 200px 100px 100px;
+    padding-top: 700px;
+    background: rgba(0,0,0);
+    height: 1200px;
+}
+
+/*Game Section*/
+section.games {
+    padding: 150px 100px 100px;
+    background: rgba(0,0,0); /* Change to a better Look BG */
+}
+
+/*Famous Game*/
+.games-container,
+.category-container{
+    max-width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+
+.games-container h3 {
+    font-size: 18px;
+    color: white;
+}
+.games-container span {
+    color: white;
+    font-size: 12px;
+}
+
+.games-box .games-box-img,
+.category-card .category-card-img{
+    width: 100%;
+    height: 270px;
+}
+
+
+.games-box .games-box-img img,
+.category-card .category-card-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.games-box .games-box-img img:hover{
+    transform: translateY(-15px);
+    transition: 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 1000px) {
+    .section-name-go{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .section-name-go{
+        font-size: 10px;
+        height: 25px;
+        margin-bottom: 5px;
+        padding: 3px;
+        margin-top: auto;
+    }
+}
+
+/* Js will help to change the content if screen size smaller than 600 and 500*/

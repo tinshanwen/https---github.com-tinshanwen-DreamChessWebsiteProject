@@ -1,0 +1,134 @@
+body {
+    background-image: url("../image/bg1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; /* Locks the background in place */
+    margin: 0; /* Removes default body margin */
+    padding: 0; /* Removes default body padding */
+    margin-top: 120px ; /* Lower the Board */
+}
+
+
+div{
+    color: azure;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    align-items: center;
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-family: Phantomsans, sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 3px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+    margin: 10px;
+}
+
+button:active,
+button:hover {
+outline: 0;
+}
+
+button span {
+background-color: rgb(5, 6, 45);
+padding: 8px 12px;
+border-radius: 3px;
+width: 100%;
+height: 100%;
+transition: 300ms;
+}
+
+button:hover span {
+background: none;
+}
+
+#chessBoard {
+    width: 400px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(8, 50px); /* 8 columns of 40px each */
+    grid-template-rows: repeat(8, 50px);    /* 8 rows of 40px each */
+    margin: 0 auto; /* Center the board */
+    margin-bottom: 20px ; 
+}
+
+.square {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.piece {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1; /* Ensure that the cursor always selects the piece */
+}
+
+.square svg {
+    width: 75%;
+    height: 75%;
+    margin: 12.5%;
+    position: relative;
+    z-index: 0;
+    pointer-events: none; /* Ensure that the cursor doesn't select the SVG */
+}
+
+.square img {
+    width: 75%;
+    height: 75%;
+    margin: 12.5%;
+    position: relative;
+    z-index: 0;
+    pointer-events: none; /* Ensure that the cursor doesn't select the image */
+}
+
+path {
+    position: relative;
+    z-index: 0;
+    pointer-events: none; /* Ensure that the cursor doesn't select the path */
+}
+
+.light {
+    background-color: #f0d9b5;
+}
+
+.dark {
+    background-color: #b58863;
+}
+
+#promotionSelector {
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: row; /* Align items horizontally */
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 10px; /* Add spacing between buttons (optional) */
+    margin-top: 10px; /* Add a bit of spacing at the top */
+    display: none; /* Temporary disable options until promotion is needed */
+}
+
+.button-highlight{
+    border-style: solid;
+    border-color: yellow;
+    border-width: 3px;
+}
+
+

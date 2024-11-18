@@ -1,0 +1,159 @@
+/*Page Layout*/
+
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+    
+}
+
+section {
+  padding: 110px 10px;
+  height: 1400px;
+  background: linear-gradient(to bottom, #4c6473 0%, #002147 100%);
+  text-align: center;
+}
+
+/* Content Part */
+
+section .content h1{
+  font-size: 40px;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+section .content div{
+  margin: 10px 6% ;
+  height: 300px;
+  width: 21.33%;
+  word-wrap: break-word;
+  float: left;
+  background-color: #fff;
+}
+
+section .content div img{
+  margin-top: 20px;
+  height: 100px;
+  width: auto;
+}
+
+section .content div p{
+  margin-top: 30px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', sans-serif;
+  font-size: 25px;
+  color: black;
+  margin-bottom: 20px;
+
+    
+}
+
+section .content div a{
+  font-family: 'Times New Roman', sans-serif;
+  font-size: 18px;
+  color: black;
+}
+
+section .content div a:link, a:visited{
+  text-decoration: none;
+}
+
+section .content div a:hover, a:active{
+  font-size: 20px;
+  transition: 0.7s;
+}
+
+/* Image Map part */
+
+.hospot{
+  position: relative;
+  margin-top:400px ;
+    
+}
+
+#hospot{
+  position: absolute;
+  border: 10px dotted #ADD8e6;
+  left: 0px;
+  right:0px;
+  margin: 0 auto;
+}
+
+#arrow_1 img{
+  height:50px;
+  transform: rotate(142deg);
+  position: absolute;
+  left: 0px;
+  right:500px;
+  top:430px;
+  margin: 0 auto;
+}
+
+#arrow_2 img{
+  height:50px;
+  transform: rotate(323deg);
+  position: absolute;
+  left: 500px;
+  right: 0px;
+  top:60px;
+  margin: 0 auto;
+}
+
+#arrow_1:hover::after{
+  cursor:pointer;
+  position: absolute;
+  content: "To KL central";
+  transform: translateX(50%);
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 5px;
+  opacity: 0.8;
+  z-index: 1;
+  top: 450px; 
+  left: 450px;
+}
+
+#arrow_2:hover::after{
+  cursor:pointer;
+  position: absolute;
+  content: "To Wangsa Maju";
+  transform: translateX(50%);
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 5px;
+  opacity: 0.8;
+  z-index: 1;
+  top: 110px; 
+  right:500px;
+}
+
+@media screen and (max-width: 850px) {
+  #arrow_1,#arrow_2{
+    display: none;
+  } 
+}
+
+
+/* When Screen Smaller */
+@media screen and (max-width: 1000px) {
+  nav .logo img {
+    display: none;
+  }
+
+  .nav{
+    padding: 10px 10px;
+  }
+
+  nav ul{
+    float: none;
+    justify-content: center;
+      
+  }
+}
+  
+
